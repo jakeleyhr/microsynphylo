@@ -5,7 +5,15 @@ Perform phylogenetic analysis of genes in microsyntenic blocks using a user-frie
 ## Installation
 
 ```bash
+# Create and enter a new conda environment
+conda create -n microsynphylo python=3.10 -c conda-forge -y
+conda activate microsynphylo
+
+#install the package
 pip install microsynphylo
+
+#install dependencies
+conda install -c conda-forge -c bioconda mafft fasttree raxml-ng -y
 ```
 
 ## Launch the App
@@ -46,7 +54,7 @@ Manually input orthology groups in the GUI:
   GroupName: B1-GeneID, B2-GeneID, B3-GeneID
   ```
 
-📌 Example:
+Example:
 ```
 NK3_Family: B0-NK3, B1-Nkx3.1, B2-Nkx3.2, B3-Nkx3.3
 ```
